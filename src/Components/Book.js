@@ -10,7 +10,7 @@ function Book({ book }) {
     <div className="container-fluid mt-3 ">
       <div className="card">
         <div className="card-header d-flex align-items-center justify-content-between">
-          <h4>{book.title}</h4>
+          <p>{book.id}</p>
           <h4
             style={{ cursor: "pointer", color: "red" }}
             onClick={() => dispatch({ type: "REMOVE_BOOK", id: book.id })}
@@ -20,8 +20,8 @@ function Book({ book }) {
           </h4>
         </div>
         <div className="card-body">
-          <p>id : {book.id}</p>
-          <p>Year : {book.year}</p>
+          <h4>Book title : {book.title}</h4>
+          <p>Published in : {book.year}</p>
 
           <Button onClick={() => setShow(true)}>Update</Button>
         </div>
