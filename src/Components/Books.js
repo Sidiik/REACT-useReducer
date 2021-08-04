@@ -20,6 +20,7 @@ function Books() {
     });
     setTitle("");
     setYear("");
+    setShow(false);
   };
   return (
     <div className="books">
